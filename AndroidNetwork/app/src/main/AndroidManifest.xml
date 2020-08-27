@@ -19,7 +19,11 @@
         <activity android:name=".PicLoadActivity">
         </activity>
 
-        <activity android:name=".PostTestActivity">
+        <activity android:name=".RequestTestActivity">
+
+        </activity>
+
+        <activity android:name=".OkhttpActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
