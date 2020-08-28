@@ -2,7 +2,8 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <Button
         android:layout_width="wrap_content"
@@ -10,5 +11,22 @@
         android:text="getRequest"
         android:textAllCaps="false"
         android:id="@+id/getRequest"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="postRequest"
+        android:textAllCaps="false"
+        android:id="@+id/postRequest"
+        android:onClick="postRequest"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="postFile"
+        android:textAllCaps="false"
+        android:id="@+id/postFile"
+        android:onClick="postFile"/>
+
 
 </LinearLayout>
