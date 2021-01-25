@@ -11,6 +11,8 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiManager;
+import android.net.wifi.p2p.WifiP2pDevice;
+import android.net.wifi.p2p.WifiP2pDeviceList;
 import android.net.wifi.p2p.WifiP2pManager;
 import android.os.Bundle;
 import android.os.PowerManager;
@@ -64,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
     private boolean mFirstInit = false;
 
     public boolean mStartConnecting = false;
+    private TextView mTextViewPeerDeviceList;
+
 
     private void requestPermissions(){
         requestPermissions(smPermissions,smRequestPermissionCode);
@@ -89,11 +93,8 @@ public class MainActivity extends AppCompatActivity {
         requestPermissions();
         setContentView(R.layout.activity_main);
 
-        // Example of a call to a native method
-        TextView tv = (TextView) findViewById(R.id.sample_text);
-        tv.setText(stringFromJNI());
-
         Log.d(TAG,"onCreate");
+        initView();
         mIntentFilter.addAction(WifiP2pManager.WIFI_P2P_STATE_CHANGED_ACTION);
         mIntentFilter.addAction(WifiP2pManager.WIFI_P2P_PEERS_CHANGED_ACTION);
         mIntentFilter.addAction(WifiP2pManager.WIFI_P2P_CONNECTION_CHANGED_ACTION);
@@ -113,6 +114,14 @@ public class MainActivity extends AppCompatActivity {
         mSharedPreferences = this.getSharedPreferences("settings_info", MODE_PRIVATE);
         //进入编辑模式 后面需要
         mSharedPreferencesEditor = mSharedPreferences.edit();
+
+    }
+
+    private void initView() {
+        // Example of a call to a native method
+        TextView tv = (TextView) findViewById(R.id.sample_text);
+        tv.setText(stringFromJNI());
+        mTextViewPeerDeviceList = (TextView) findViewById(R.id.peer_devices);
 
     }
 
@@ -172,9 +181,10 @@ public class MainActivity extends AppCompatActivity {
         mSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Log.d(TAG,"mSpinner View select "+position);
                 switch(position){
                     case 1: //start scan
-                        Log.d(TAG,"mSpinner View select"+position);
+                        tryDiscoverPeers();
                         break;
                     default:
                         break;
@@ -190,11 +200,67 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private boolean mForceStopScan = false;
+    /*start scan if success then to requestPeers*/
+    private void tryDiscoverPeers() {
+        mForceStopScan = false;
+        mWifiP2pManager.discoverPeers(mChannel, new WifiP2pManager.ActionListener() {
+            @Override
+            public void onSuccess() {
+                Log.d(TAG,"Discovery peers succeed, Requesting peers now");
+                requestPeers();
+            }
+
+            @Override
+            public void onFailure(int reason) {
+                Log.d(TAG,"Discovery peers failed with reason "+ reason);
+            }
+        });
+
+    }
+
+
+    /*Request the current list of peers： just get list not to discovery */
+    private ArrayList<WifiP2pDevice> mWifiP2pDeviceList = new ArrayList<WifiP2pDevice>();
+    //private TextView mPeersDeviceList;
+    private void requestPeers() {
+        mWifiP2pManager.requestPeers(mChannel, new WifiP2pManager.PeerListListener() {
+            @Override
+            public void onPeersAvailable(WifiP2pDeviceList peers) {
+                Log.d(TAG,"Received list of peers");
+
+                mWifiP2pDeviceList.clear();
+                if(!peers.getDeviceList().isEmpty()){
+                    Log.d(TAG,"device list is not null");
+                    for (WifiP2pDevice device : peers.getDeviceList()){
+                        Log.d(TAG,"liuyu "+describeWifiP2pDevice(device));
+                        mWifiP2pDeviceList.add(device);
+                    }
+
+                    String list = MainActivity.this.getResources().getString(R.string.peer_list);
+                    for(int i=0; i < mWifiP2pDeviceList.size();i++){
+                        list += " "+mWifiP2pDeviceList.get(i).deviceName;
+                        Log.d(TAG,"onPeersAvailable peerDevice: " + mWifiP2pDeviceList.get(i).deviceName+", status:"+mWifiP2pDeviceList.get(i).status + " (0-CONNECTED,3-AVAILABLE)");
+                    }
+                    //show on TextView
+                    mTextViewPeerDeviceList.setText(list);
+                } else {
+                    Log.d(TAG,"device list is null");
+                    mTextViewPeerDeviceList.setText("device list is null");
+                }
+
+            }
+        });
+    }
+
+    private String describeWifiP2pDevice(WifiP2pDevice device) {
+        return device != null ? device.toString().replace('\n',','):"null";
+    }
+
     private ArrayList<String> mFunList;
     private void initFunList() {
         mFunList = new ArrayList<String>();
-        mFunList.add(" ");
-        mFunList.add(" ");
+        mFunList.add(" Function List : ");
         mFunList.add("Start scan");
         mFunList.add("Stop scan");
         mFunList.add("Start listen");
