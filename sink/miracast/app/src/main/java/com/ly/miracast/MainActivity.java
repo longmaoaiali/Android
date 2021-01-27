@@ -2,6 +2,7 @@ package com.ly.miracast;
 
 
 import android.Manifest;
+import android.annotation.TargetApi;
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -11,9 +12,13 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiManager;
+import android.net.wifi.WpsInfo;
+import android.net.wifi.p2p.WifiP2pConfig;
 import android.net.wifi.p2p.WifiP2pDevice;
 import android.net.wifi.p2p.WifiP2pDeviceList;
+import android.net.wifi.p2p.WifiP2pInfo;
 import android.net.wifi.p2p.WifiP2pManager;
+import android.net.wifi.p2p.WifiP2pWfdInfo;
 import android.os.Bundle;
 import android.os.PowerManager;
 import android.os.UserHandle;
@@ -27,6 +32,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -50,7 +56,8 @@ public class MainActivity extends AppCompatActivity {
             Manifest.permission.CHANGE_NETWORK_STATE,
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
             Manifest.permission.READ_EXTERNAL_STORAGE,
-            Manifest.permission.WAKE_LOCK,
+            Manifest.permission.WAKE_LOCK
+
     };
     private static int smRequestPermissionCode = 644;
 
@@ -67,6 +74,9 @@ public class MainActivity extends AppCompatActivity {
 
     public boolean mStartConnecting = false;
     private TextView mTextViewPeerDeviceList;
+    private WifiP2pDevice mSelectDevice;
+    private boolean mWfdEnabled=false;
+
 
 
     private void requestPermissions(){
@@ -186,6 +196,54 @@ public class MainActivity extends AppCompatActivity {
                     case 1: //start scan
                         tryDiscoverPeers();
                         break;
+                    case 2://stop scan
+                        stopPeerDiscovery();
+                        break;
+                    case 3://start listen
+                        startListen();
+                        break;
+                    case 4:
+                        stopListen();
+                        break;
+                    case 5:
+                        creatGroup();
+                    case 6:
+                        removeGroup();
+                    case 7://connect to peer by pin
+                        if (mSelectDevice==null) {
+                            Toast.makeText(MainActivity.this,"select device is null",Toast.LENGTH_SHORT);
+                        } else {
+                            startConnect(mSelectDevice,1);
+                        }
+                    case 8://connect to peer by push button
+                        if (mSelectDevice==null) {
+                            Toast.makeText(MainActivity.this,"select device is null",Toast.LENGTH_SHORT);
+                        } else {
+                            startConnect(mSelectDevice,0);
+                        }
+                        break;
+                    case 9:// Set wfd session manual mode
+                        if (mSelectDevice==null) {
+                            Toast.makeText(MainActivity.this,"select device is null",Toast.LENGTH_SHORT);
+                        } else {
+                            startConnect(mSelectDevice,2);
+                        }
+                        break;
+                    case 10:// Set wfd session auto mode
+                        setWfdSessionMode(true);
+                        break;
+                    case 11:
+                        setWfdSessionMode(false);
+                        break;
+                    case 12:// Continue remaining wfd session under manual mode
+                        startWfdSession();
+                        break;
+                    case 13://set role sink
+                        changeRole(true);
+                        break;
+                    case 14:
+                        changeRole(false);
+                        break;
                     default:
                         break;
                 }
@@ -200,6 +258,251 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @TargetApi(30)
+    private void reflectSetWFDInfoMethod(WifiP2pManager.Channel channel, WifiP2pWfdInfo wifiP2pWfdInfo, WifiP2pManager.ActionListener listener){
+        try {
+            Class<?> clazz = Class.forName("android.net.wifi.p2p.WifiP2pManager");
+            Class[] functionArgs = new Class[3];
+            functionArgs[0] = WifiP2pManager.Channel.class;
+            functionArgs[1] = WifiP2pWfdInfo.class;
+            functionArgs[2] = WifiP2pManager.ActionListener.class;
+            Method connect = mWifiP2pManager.getClass().getDeclaredMethod("setWFDInfo", functionArgs);
+            //connect.setAccessible(true);
+            connect.invoke(mWifiP2pManager,channel,wifiP2pWfdInfo,listener);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    //APILevel >= 30
+    @TargetApi(30)
+    private void changeRole(boolean isSink) {
+        if(!isNetAvailiable()){
+            return;
+        }
+        //todo:WifiP2pWfdInfo
+        WifiP2pWfdInfo wfdInfo = new WifiP2pWfdInfo();
+        if(isSink){
+            mWfdEnabled = true;
+            wfdInfo.setDeviceType(WifiP2pWfdInfo.DEVICE_TYPE_PRIMARY_SINK);
+            wfdInfo.setSessionAvailable(true);
+            wfdInfo.setControlPort(7236);
+            wfdInfo.setMaxThroughput(50);
+        } else {
+            mWfdEnabled = false;
+        }
+
+        reflectSetWFDInfoMethod(mChannel, wfdInfo, new WifiP2pManager.ActionListener() {
+            @Override
+            public void onSuccess() {
+                Log.d(TAG, "Successfully set WFD info.");
+            }
+
+            @Override
+            public void onFailure(int reason) {
+                Log.d(TAG, "Failed to set WFD info with reason " + reason + ".");
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                MainActivity.this.changeRole(true);
+            }
+        });
+
+        //mChannel
+        /*
+        mWifiP2pManager.setWFDInfo(mChannel, wfdInfo, new WifiP2pManager.ActionListener() {
+            @Override
+            public void onSuccess() {
+                Log.d(TAG, "Successfully set WFD info.");
+            }
+
+            @Override
+            public void onFailure(int reason) {
+                Log.d(TAG, "Failed to set WFD info with reason " + reason + ".");
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                MainActivity.this.changeRole(true);
+            }
+        });
+        */
+    }
+
+    private boolean isNetAvailiable() {
+        if(mWifiManager != null){
+            int state = mWifiManager.getWifiState();
+            if(WifiManager.WIFI_STATE_ENABLING == state
+                    || WifiManager.WIFI_STATE_ENABLED == state){
+                Log.d(TAG,"WIFI enabled");
+                return true;
+            } else {
+                Log.d(TAG,"WIFI disabled");
+                return false;
+            }
+        }
+        return false;
+    }
+
+    private String mPort;
+    private String mIP;
+    public static final String HRESOLUTION_DISPLAY = "display_resolution_hd";
+    private void startWfdSession() {
+        //手动建立会话
+        if(mManualInitWfdSession){
+            Log.d(TAG,"start Manual WfdSession");
+            setConnect();
+            Log.d(TAG,"start miracast");
+            Intent intent = new Intent(MainActivity.this,SinkActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putString(SinkActivity.KEY_PORT, mPort);
+            bundle.putString(SinkActivity.KEY_IP, mIP);
+            bundle.putBoolean(HRESOLUTION_DISPLAY,mSharedPreferences.getBoolean(HRESOLUTION_DISPLAY,true));
+            intent.putExtras(bundle);
+            startActivity(intent);
+        } else {
+          Log.d(TAG,"error Auto WfdSessionMode,return");
+          return;
+        }
+    }
+
+    //UI show
+    private void setConnect() {
+        Log.d(TAG,"show wifi yes");
+        /*
+        mConnectDesc.setText (getString (R.string.connected_info) );
+        mConnectStatus.setBackgroundResource (R.drawable.wifi_yes);
+        */
+    }
+
+    public boolean mManualInitWfdSession = false;
+    private void setWfdSessionMode(boolean mode) {
+        Log.d(TAG, "setWfdSessionMode " + mode);
+        mManualInitWfdSession = mode;
+    }
+
+    //config WCS(WPS) 是 wifi simple configuration 的 method
+    private void startConnect(WifiP2pDevice selectDevice, int config) {
+        if (config > WpsInfo.KEYPAD) {
+            Log.d(TAG,"startConnect config invalid.");
+        }
+
+        if(config == WpsInfo.PBC)
+            Log.d(TAG,"startConnect PBC configuration");
+        else if(config == WpsInfo.DISPLAY)
+            Log.d(TAG,"startConnect DISPLAY configuration");
+        else if(config == WpsInfo.KEYPAD)
+            Log.d(TAG,"startConnect KEYPAD configuration");
+
+        WifiP2pConfig wifiP2pConfig = new WifiP2pConfig();
+        WpsInfo wpsInfo = new WpsInfo();
+
+        wpsInfo.setup = config;
+        wifiP2pConfig.wps = wpsInfo;
+        wifiP2pConfig.deviceAddress = selectDevice.deviceAddress;
+        //max intent for GO
+        wifiP2pConfig.groupOwnerIntent = 15;
+        mStartConnecting = true;
+
+        mWifiP2pManager.connect(mChannel, wifiP2pConfig, new WifiP2pManager.ActionListener() {
+            @Override
+            public void onSuccess() {
+                Log.d(TAG,"startConnect success");
+            }
+
+            @Override
+            public void onFailure(int reason) {
+                mStartConnecting =false;
+                Log.d(TAG,"startConnect failed with reason "+reason);
+            }
+        });
+
+    }
+
+    private void removeGroup() {
+        mForceStopScan = false;
+        mWifiP2pManager.removeGroup(mChannel, new WifiP2pManager.ActionListener() {
+            @Override
+            public void onSuccess() {
+                Log.d(TAG, "removeGroup Success");
+            }
+
+            @Override
+            public void onFailure(int reason) {
+                Log.d(TAG, "removeGroup Failure");
+            }
+        });
+    }
+
+    private void creatGroup() {
+        mForceStopScan = true;
+        mWifiP2pManager.createGroup(mChannel, new WifiP2pManager.ActionListener() {
+            @Override
+            public void onSuccess() {
+                Log.d(TAG,"creatGroup success");
+            }
+
+            @Override
+            public void onFailure(int reason) {
+                Log.d(TAG,"creatGroup failed");
+            }
+        });
+    }
+
+    private void startListen() {
+        Log.d(TAG, "WifiP2pManager.listen call failed");
+        /*
+        mWifiP2pManager.listen(mChannel,true, new WifiP2pManager.ActionListener() {
+            @Override
+            public void onSuccess() {
+                Log.d(TAG, "start listen peers succeed.");
+            }
+
+            @Override
+            public void onFailure(int reason) {
+                Log.d(TAG, "start listen peers failed with reason " + reason + ".");
+            }
+        });
+        */
+    }
+
+    private void stopListen() {
+        Log.d(TAG, "WifiP2pManager.listen call failed");
+        /*
+        mWifiP2pManager.listen(mChannel,false, new WifiP2pManager.ActionListener() {
+            @Override
+            public void onSuccess() {
+                Log.d(TAG, "start listen peers succeed.");
+            }
+
+            @Override
+            public void onFailure(int reason) {
+                Log.d(TAG, "start listen peers failed with reason " + reason + ".");
+            }
+        });
+        */
+    }
+
+    private void stopPeerDiscovery() {
+        Log.d(TAG,"stopDiscover, do ForceStopScan");
+        mForceStopScan = true;
+        Log.d(TAG,"WPM.stopDiscovery",new Throwable());
+        mWifiP2pManager.stopPeerDiscovery(mChannel, new WifiP2pManager.ActionListener() {
+            @Override
+            public void onSuccess() {
+                Log.d(TAG,"Stop peer discovery succeed.");
+            }
+
+            @Override
+            public void onFailure(int reason) {
+                Log.d(TAG,"Stop peer discovery failed with reason "+reason);
+            }
+        });
+    }
+
     private boolean mForceStopScan = false;
     /*start scan if success then to requestPeers*/
     private void tryDiscoverPeers() {
@@ -208,6 +511,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSuccess() {
                 Log.d(TAG,"Discovery peers succeed, Requesting peers now");
+                //request will be null , advertise to listen broadcast
                 requestPeers();
             }
 
