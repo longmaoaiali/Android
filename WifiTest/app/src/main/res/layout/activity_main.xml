@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+
+        android:id="@+id/linearLayout2"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/textViewOpenTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="打开时长(s)"/>
+
+        <EditText
+            android:id="@+id/editTextOpenTimeValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="25dp"
+            android:text="20"/>
+
+        <TextView
+            android:id="@+id/textViewCloseTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="关闭时长(s)"/>
+
+        <EditText
+            android:id="@+id/editTextCloseTimeValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="25dp"
+            android:text="5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/linearLayout2">
+
+        <TextView
+            android:id="@+id/textViewTestNums"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="总测试次数"/>
+
+        <EditText
+            android:id="@+id/editTextTestNum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="25dp"
+            android:text="10000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout3"
+        android:id="@+id/linearLayout4"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:id="@+id/textViewTestCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="进行第0次测试" />
+
+        <TextView
+            android:id="@+id/textViewSuccessCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="成功次数:0次" />
+
+        <TextView
+            android:id="@+id/textViewFailCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="失败次数:0次" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout4"
+        android:id="@+id/linearLayout6"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_marginLeft="3dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout4"
+            android:layout_toRightOf="@+id/viewLine"
+            android:text="start" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="0dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout4"
+            android:layout_toRightOf="@+id/btnStart"
+            android:text="stop" />
+
+        <TextView
+            android:id="@+id/textViewIP"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="3dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout4"
+            android:layout_toRightOf="@+id/btnStop"
+            android:gravity="center"
+            android:text="IPV4:000.000.000.000"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="2dp"
+        android:layout_below="@id/linearLayout6"
+        android:background="@drawable/border_write"
+        android:id="@+id/messageShow"/>
+
+
+</RelativeLayout>
