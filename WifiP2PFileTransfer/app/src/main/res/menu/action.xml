@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuDirectEnable"
+        android:title="WIFI 开关"
+        android:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menuDirectDiscover"
+        android:title="搜索附近设备"
+        android:showAsAction="ifRoom"/>
+
+</menu>

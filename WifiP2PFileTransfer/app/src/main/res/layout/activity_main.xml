@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cvte.wifip2pfiletransfer.MainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用时需要打开GPS开关并授予所有权限"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/checkPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="检查权限"/>
+
+    <Button
+        android:id="@+id/sendFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送文件"/>
+
+    <Button
+        android:id="@+id/receiveFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="接收文件"/>
+
+</LinearLayout>
