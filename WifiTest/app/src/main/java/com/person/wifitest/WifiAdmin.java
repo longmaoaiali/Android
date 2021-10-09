@@ -27,4 +27,16 @@ public class WifiAdmin {
             mWifiManager.setWifiEnabled(true);
         }
     }
+
+    public String getIPAddress(){
+        mWifiInfo = mWifiManager.getConnectionInfo();
+        return (mWifiInfo==null)?"0":formatIPAddress(mWifiInfo.getIpAddress());
+    }
+
+    public static String formatIPAddress(int ipAddress){
+        return (ipAddress & 0xFF)+"."+
+                ((ipAddress>>8) & 0xFF)+"."+
+                ((ipAddress>>16) & 0xFF)+"."+
+                ((ipAddress>>24) & 0xFF);
+    }
 }
