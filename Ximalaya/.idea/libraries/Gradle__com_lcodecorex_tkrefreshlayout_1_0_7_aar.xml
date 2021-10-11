@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.lcodecorex:tkrefreshlayout:1.0.7@aar">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../../AndroidSDK/caches/transforms-3/4d72eccd54a8e6fde3270ab81842998b/transformed/tkrefreshlayout-1.0.7/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../AndroidSDK/caches/transforms-3/4d72eccd54a8e6fde3270ab81842998b/transformed/tkrefreshlayout-1.0.7/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../AndroidSDK/caches/transforms-3/4d72eccd54a8e6fde3270ab81842998b/transformed/tkrefreshlayout-1.0.7/res" />
+      <root url="file://$PROJECT_DIR$/../../AndroidSDK/caches/transforms-3/4d72eccd54a8e6fde3270ab81842998b/transformed/tkrefreshlayout-1.0.7/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../AndroidSDK/caches/modules-2/files-2.1/com.lcodecorex/tkrefreshlayout/1.0.7/6fc1e3c8a06655bced9f61e453c7842b65b3bfca/tkrefreshlayout-1.0.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../AndroidSDK/caches/modules-2/files-2.1/com.lcodecorex/tkrefreshlayout/1.0.7/83465fd76b6b84598c9a9f5255228750df6a50ec/tkrefreshlayout-1.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cvte.ximalaya.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/colorBackgroundRed">
+
+        <!--根据设计的图片定大小-->
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/main_indicator"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:id="@+id/search_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!--给个相对布局使搜索图片在权重为1的相对布局中居中显示-->
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/search_icon"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="60dp"
+        android:overScrollMode="never"/>
+    <!--android:overScrollMode="never" 滑动到边框时不会出现颜色边-->
+
+    <LinearLayout
+        android:id="@+id/main_play_control"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        
+        <com.cvte.ximalaya.views.RoundRectImageView
+            android:id="@+id/track_cover"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/ximalay_logo"/>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/track_little_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="随便听听"
+                android:textColor="#444444"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"/>
+
+            <TextView
+                android:id="@+id/track_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="喜马拉雅"
+                android:textColor="#9d9d9d"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+         <ImageView
+             android:id="@+id/sub_play_control"
+             android:layout_width="35dp"
+             android:layout_height="35dp"
+             android:src="@drawable/selector_player_play"
+             android:layout_marginRight="10dp"
+             android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

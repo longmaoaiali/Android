@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Ximalaya</string>
+
+    <string-array name="indicator_title">
+        <item>推荐</item>
+        <item>订阅</item>
+        <item>历史</item>
+    </string-array>
+
+    <string name="PLAY_MODEL_SINGLE">单曲播放</string>
+    <string name="PLAY_MODEL_SINGLE_LOOP">单曲循环</string>
+    <string name="PLAY_MODEL_LIST">列表播放</string>
+    <string name="PLAY_MODEL_LIST_LOOP">列表循环</string>
+    <string name="PLAY_MODEL_RANDOM">随机播放</string>
+
+    <string name="PLAYER_PLAYING">正在播放</string>
+    <string name="PLAYER_PAUSING">点击播放</string>
+    <!--PLAY_MODEL_SINGLE,-->
+    <!--PLAY_MODEL_SINGLE_LOOP,-->
+    <!--PLAY_MODEL_LIST,-->
+    <!--PLAY_MODEL_LIST_LOOP,-->
+    <!--PLAY_MODEL_RANDOM;-->
+
+    <string name="cancel_sub_tips_text">取消订阅</string>
+    <string name="sub_tips_text">+订阅</string>
+    <string name="cancel_sub_success" >取消订阅成功</string>
+    <string name="cancel_sub_failed" >取消订阅失败</string>
+
+
+</resources>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/XmlyOAuth2SDK_V2.0.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/XmlyOAuth2SDK_V2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
