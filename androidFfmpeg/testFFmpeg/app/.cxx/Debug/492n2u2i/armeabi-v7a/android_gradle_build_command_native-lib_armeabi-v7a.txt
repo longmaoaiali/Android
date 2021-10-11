@@ -1,0 +1,7 @@
+Executable : D:\AndroidSDK\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+D:\github\ffmpegAndroid\testFFmpeg\app\.cxx\Debug\492n2u2i\armeabi-v7a
+native-lib
+jvmArgs : 
+

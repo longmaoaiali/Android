@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4923e19a-edd4-4966-82fe-dd28bebdc7c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/testFFmpeg.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/androidTest/java/com/cvte/androidopengl/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/main/java/com/cvte/androidopengl/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/main/java/com/cvte/androidopengl/Render/GLRender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/app/src/test/java/com/cvte/androidopengl/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AndroidOpenGL/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavcodec/avcodec.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavcodec/avdct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavcodec/avfft.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavcodec/d3d11va.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavcodec/dirac.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavcodec/dv_profile.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavcodec/dxva2.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavcodec/jni.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavcodec/mediacodec.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavcodec/qsv.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavcodec/vaapi.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavcodec/vda.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavcodec/vdpau.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavcodec/version.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavcodec/videotoolbox.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavcodec/vorbis_parser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavcodec/xvmc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavfilter/avfilter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavfilter/avfiltergraph.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavfilter/buffersink.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavfilter/buffersrc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavfilter/version.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavformat/avformat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavformat/avio.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavformat/version.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/adler32.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/aes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/aes_ctr.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/attributes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/audio_fifo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/avassert.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/avconfig.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/avstring.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/avutil.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/base64.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/blowfish.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/bprint.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/bswap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/buffer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/camellia.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/cast5.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/channel_layout.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/common.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/cpu.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/crc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/des.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/dict.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/display.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/downmix_info.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/error.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/eval.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/ffversion.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/fifo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/file.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/frame.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/hash.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/hmac.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/hwcontext.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/hwcontext_cuda.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/hwcontext_d3d11va.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/hwcontext_drm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/hwcontext_dxva2.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/hwcontext_qsv.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/hwcontext_vaapi.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/hwcontext_vdpau.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/hwcontext_videotoolbox.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/imgutils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/intfloat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/intreadwrite.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/lfg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/log.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/lzo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/macros.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/mastering_display_metadata.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/mathematics.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/md5.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/mem.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/motion_vector.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/murmur3.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/opt.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/parseutils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/pixdesc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/pixelutils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/pixfmt.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/random_seed.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/rational.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/rc4.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/replaygain.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/ripemd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/samplefmt.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/sha.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/sha512.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/spherical.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/stereo3d.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/tea.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/threadmessage.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/time.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/timecode.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/timestamp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/tree.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/twofish.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/version.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libavutil/xtea.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libswresample/swresample.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libswresample/version.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libswscale/swscale.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/include/libswscale/version.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/libs/armeabi-v7a/libavcodec.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/libs/armeabi-v7a/libavfilter.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/libs/armeabi-v7a/libavformat.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/libs/armeabi-v7a/libavutil.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/libs/armeabi-v7a/libswresample.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/libs/armeabi-v7a/libswscale.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/androidTest/java/com/cvte/xplay/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/FFDemux.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/FFDemux.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/FFResample.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/FFResample.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/FFdecode.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/FFdecode.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/GLVideoView.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/GLVideoView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/IDecode.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/IDecode.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/IDemux.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/IDemux.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/IObserver.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/IObserver.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/IResample.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/IResample.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/IVideoView.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/IVideoView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/XData.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/XData.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/XEGL.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/XEGL.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/XLog.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/XLog.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/XParameter.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/XParameter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/XShader.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/XShader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/XTexture.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/XTexture.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/XThread.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/XThread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/cpp/native-lib.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/java/com/cvte/xplay/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/java/com/cvte/xplay/XPlay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/app/src/test/java/com/cvte/xplay/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/patch.diff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XPlay/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1zLO9EPpaVeeRMaTOEltnwk0cJB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="testFFmpeg.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4923e19a-edd4-4966-82fe-dd28bebdc7c5" name="Default Changelist" comment="" />
+      <created>1633923750556</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633923750556</updated>
+    </task>
+    <servers />
+  </component>
+</project>
