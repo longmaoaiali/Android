@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.tamsiree.RxTool:RxKit:v2.4.1@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../AndroidSDK/caches/transforms-3/ee8727c1ebc58df2addcb80f0ec3aeb7/transformed/RxKit-v2.4.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../AndroidSDK/caches/transforms-3/ee8727c1ebc58df2addcb80f0ec3aeb7/transformed/RxKit-v2.4.1/res" />
+      <root url="file://$PROJECT_DIR$/../../AndroidSDK/caches/transforms-3/ee8727c1ebc58df2addcb80f0ec3aeb7/transformed/RxKit-v2.4.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../AndroidSDK/caches/modules-2/files-2.1/com.github.tamsiree.RxTool/RxKit/v2.4.1/57a54a5f6ead8e9d8abd802d20ad73d52a8bf1fa/RxKit-v2.4.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

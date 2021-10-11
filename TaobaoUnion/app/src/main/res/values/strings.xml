@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TaobaoUnion</string>
+    <string name="text_home">首页</string>
+    <string name="text_selected">精选</string>
+    <string name="text_red_packet">特惠</string>
+    <string name="text_search">搜索</string>
+    <string name="network_error_tips_text">网络错误,请点击重试</string>
+    <string name="text_goods_off_price">省%1$d元</string>
+    <string name="text_goods_original_price">￥%1$s</string>
+    <string name="text_goods_sale_counts">%1$d人已经购买</string>
+    <string name="colorEEEEEE">#EFEEEE</string>
+</resources>

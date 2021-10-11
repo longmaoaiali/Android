@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.tamsiree.RxTool:RxUI:v2.4.1@aar">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../../AndroidSDK/caches/transforms-3/a6f40c7b7f8065a2687c42c457d0edc3/transformed/RxUI-v2.4.1/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../AndroidSDK/caches/transforms-3/a6f40c7b7f8065a2687c42c457d0edc3/transformed/RxUI-v2.4.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../AndroidSDK/caches/transforms-3/a6f40c7b7f8065a2687c42c457d0edc3/transformed/RxUI-v2.4.1/res" />
+      <root url="file://$PROJECT_DIR$/../../AndroidSDK/caches/transforms-3/a6f40c7b7f8065a2687c42c457d0edc3/transformed/RxUI-v2.4.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../AndroidSDK/caches/modules-2/files-2.1/com.github.tamsiree.RxTool/RxUI/v2.4.1/b576182572eaa6bb435b1a76a16f82a6ba279d26/RxUI-v2.4.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
