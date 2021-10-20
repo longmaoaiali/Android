@@ -1,0 +1,94 @@
+[
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_esptouch2.xml.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\layout\\activity_esptouch2.xml"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_provision.xml.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\layout\\activity_provision.xml"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_esptouch.xml.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\layout\\activity_esptouch.xml"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\xml_backup_descriptor.xml.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\xml\\backup_descriptor.xml"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_info_outline_white_24dp.png.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\drawable-mdpi\\ic_info_outline_white_24dp.png"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_app_icon.png.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\mipmap-xxhdpi\\app_icon.png"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_app_icon.png.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\mipmap-mdpi\\app_icon.png"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_baseline_info_black_24.png.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\drawable-xxhdpi\\baseline_info_black_24.png"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_baseline_info_black_24.png.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\drawable-xhdpi\\baseline_info_black_24.png"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_info_outline_black_24dp.png.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\drawable-mdpi\\ic_info_outline_black_24dp.png"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_baseline_info_black_24.png.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\drawable-mdpi\\baseline_info_black_24.png"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_info_outline_black_24dp.png.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\drawable-xxhdpi\\ic_info_outline_black_24dp.png"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_info_outline_white_24dp.png.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\drawable-xxhdpi\\ic_info_outline_white_24dp.png"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main_item.xml.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\layout\\activity_main_item.xml"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_app_icon.png.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\mipmap-hdpi\\app_icon.png"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_app_icon.png.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\mipmap-xxxhdpi\\app_icon.png"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_app_icon.png.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\mipmap-xhdpi\\app_icon.png"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_info_outline_black_24dp.png.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\drawable-xhdpi\\ic_info_outline_black_24dp.png"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_info_outline_white_24dp.png.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\drawable-xhdpi\\ic_info_outline_white_24dp.png"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_baseline_info_black_24.png.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\drawable-hdpi\\baseline_info_black_24.png"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_info_outline_black_24dp.png.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\drawable-hdpi\\ic_info_outline_black_24dp.png"
+    },
+    {
+        "merged": "D:\\github\\Android\\EsptouchForAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_info_outline_white_24dp.png.flat",
+        "source": "D:\\github\\Android\\EsptouchForAndroid\\app\\src\\main\\res\\drawable-hdpi\\ic_info_outline_white_24dp.png"
+    }
+]

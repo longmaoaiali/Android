@@ -1,0 +1,33 @@
+com/espressif/esptouch/android/v2/EspTouch2Activity.java
+ com.espressif.esptouch.android.v2.EspTouch2Activity
+ com.espressif.esptouch.android.v2.EspTouch2Activity$SyncListener
+com/espressif/esptouch/android/v2/EspProvisioningActivity.java
+ com.espressif.esptouch.android.v2.EspProvisioningActivity
+ com.espressif.esptouch.android.v2.EspProvisioningActivity$ProvisionListener
+ com.espressif.esptouch.android.v2.EspProvisioningActivity$StationAdapter
+ com.espressif.esptouch.android.v2.EspProvisioningActivity$StationHolder
+com/espressif/esptouch/android/databinding/ActivityEsptouchBinding.java
+ com.espressif.esptouch.android.databinding.ActivityEsptouchBinding
+com/espressif/esptouch/android/databinding/ActivityProvisionBinding.java
+ com.espressif.esptouch.android.databinding.ActivityProvisionBinding
+com/espressif/esptouch/android/main/EspMainActivity.java
+ com.espressif.esptouch.android.main.EspMainActivity
+ com.espressif.esptouch.android.main.EspMainActivity$ItemAdapter
+ com.espressif.esptouch.android.main.EspMainActivity$ItemHolder
+com/espressif/esptouch/android/EspTouchActivityAbs.java
+ com.espressif.esptouch.android.EspTouchActivityAbs
+ com.espressif.esptouch.android.EspTouchActivityAbs$StateResult
+com/espressif/esptouch/android/databinding/ActivityMainItemBinding.java
+ com.espressif.esptouch.android.databinding.ActivityMainItemBinding
+com/espressif/esptouch/android/databinding/ActivityMainBinding.java
+ com.espressif.esptouch.android.databinding.ActivityMainBinding
+com/espressif/esptouch/android/databinding/ActivityEsptouch2Binding.java
+ com.espressif.esptouch.android.databinding.ActivityEsptouch2Binding
+com/espressif/esptouch/android/BuildConfig.java
+ com.espressif.esptouch.android.BuildConfig
+com/espressif/esptouch/android/v1/EspTouchActivity.java
+ com.espressif.esptouch.android.v1.EspTouchActivity
+ com.espressif.esptouch.android.v1.EspTouchActivity$EsptouchAsyncTask4
+com/espressif/esptouch/android/EspTouchApp.java
+ com.espressif.esptouch.android.EspTouchApp
+ com.espressif.esptouch.android.EspTouchApp$1

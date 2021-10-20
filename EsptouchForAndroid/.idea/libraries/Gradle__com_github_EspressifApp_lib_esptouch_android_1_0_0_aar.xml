@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.EspressifApp:lib-esptouch-android:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../AndroidSDK/caches/transforms-3/f38816f34f904c187857e6a78430dfc6/transformed/lib-esptouch-android-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../AndroidSDK/caches/transforms-3/f38816f34f904c187857e6a78430dfc6/transformed/lib-esptouch-android-1.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../AndroidSDK/caches/transforms-3/f38816f34f904c187857e6a78430dfc6/transformed/lib-esptouch-android-1.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../AndroidSDK/caches/modules-2/files-2.1/com.github.EspressifApp/lib-esptouch-android/1.0.0/79c8be3d83d26a7e618049d30c7d8e9512835d6/lib-esptouch-android-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

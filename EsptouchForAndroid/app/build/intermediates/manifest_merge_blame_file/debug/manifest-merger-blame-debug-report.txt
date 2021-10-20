@@ -1,0 +1,102 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.espressif.esptouch.android"
+4    android:versionCode="29"
+5    android:versionName="v2.3.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:6:5-67
+11-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+12-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:7:5-76
+12-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:7:22-73
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:8:5-79
+13-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:8:22-76
+14    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+14-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:9:5-86
+14-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:9:22-83
+15    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+15-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:10:5-76
+15-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:10:22-73
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:11:5-79
+16-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:11:22-76
+17
+18    <application
+18-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:13:5-47:19
+19        android:name="com.espressif.esptouch.android.EspTouchApp"
+19-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:14:9-36
+20        android:allowBackup="true"
+20-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:15:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.5.0] D:\AndroidSDK\caches\transforms-3\255d63c0f9f8f5d12ab3191ffb377750\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:fullBackupContent="@xml/backup_descriptor"
+23-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:20:9-59
+24        android:icon="@mipmap/app_icon"
+24-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:16:9-40
+25        android:label="@string/app_name"
+25-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:17:9-41
+26        android:theme="@style/AppTheme" >
+26-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:18:9-40
+27        <activity
+27-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:21:9-31:20
+28            android:name="com.espressif.esptouch.android.main.EspMainActivity"
+28-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:22:13-49
+29            android:exported="true"
+29-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:23:13-36
+30            android:label="@string/app_name"
+30-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:24:13-45
+31            android:screenOrientation="portrait" >
+31-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:25:13-49
+32            <intent-filter>
+32-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:26:13-30:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:27:17-69
+33-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:27:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:29:17-77
+35-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:29:27-74
+36            </intent-filter>
+37        </activity>
+38        <activity
+38-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:32:9-36:52
+39            android:name="com.espressif.esptouch.android.v1.EspTouchActivity"
+39-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:33:13-78
+40            android:exported="true"
+40-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:34:13-36
+41            android:label="@string/esptouch1_title"
+41-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:35:13-52
+42            android:screenOrientation="portrait" />
+42-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:36:13-49
+43        <activity
+43-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:37:9-41:52
+44            android:name="com.espressif.esptouch.android.v2.EspTouch2Activity"
+44-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:38:13-79
+45            android:exported="true"
+45-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:39:13-36
+46            android:label="@string/esptouch2_title"
+46-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:40:13-52
+47            android:screenOrientation="portrait" />
+47-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:41:13-49
+48        <activity
+48-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:42:9-46:52
+49            android:name="com.espressif.esptouch.android.v2.EspProvisioningActivity"
+49-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:43:13-85
+50            android:exported="true"
+50-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:44:13-36
+51            android:label="@string/esptouch2_provisioning_title"
+51-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:45:13-65
+52            android:screenOrientation="portrait" />
+52-->D:\github\Android\EsptouchForAndroid\app\src\main\AndroidManifest.xml:46:13-49
+53    </application>
+54
+55</manifest>
