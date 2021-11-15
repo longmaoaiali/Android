@@ -10,8 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="330ac728-f4e6-45a1-aa50-b359a77b1bc8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../LAN projection/ProjectionScreenPlayer-master/.idea/modules/ProjectionScreenPlayer-master.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAN projection/ProjectionScreenPlayer-master/.idea/modules/app/ProjectionScreenPlayer-master.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
