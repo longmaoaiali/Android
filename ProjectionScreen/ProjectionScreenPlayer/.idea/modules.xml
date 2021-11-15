@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ProjectionScreenPlayer-master.iml" filepath="$PROJECT_DIR$/.idea/modules/ProjectionScreenPlayer-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ProjectionScreenPlayer-master.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ProjectionScreenPlayer-master.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ProjectionScreenPlayer.iml" filepath="$PROJECT_DIR$/.idea/modules/ProjectionScreenPlayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ProjectionScreenPlayer.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ProjectionScreenPlayer.app.iml" />
     </modules>
   </component>
 </project>
